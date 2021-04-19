@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>promise</title>
+        <script type="text/javascript">
+            new Promise(function(resolve,reject){
+                setTimeout(() =>resolve(1),5000);
+            }).then(function(r){
+                console.log(r);
+                return r*2;
+            }).then(function(r){
+                console.log(r);
+                return r*2;
+            }).then(function(r){
+                console.log(r);
+                return r*2;
+            }).then(function(r){
+                console.log(r);
+                return r*2;
+            })
+        </script>
+</head>
+</html>

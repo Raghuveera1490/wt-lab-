@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asyc</title>
+	<script type="text/javascript">
+		async function f(){
+			let promise=new Promise(function(resolve,reject){
+				{setTimeout(function(){resolve("done")},3000)
+			}
+			});
+
+			let result=await promise;
+			console.log(result);
+			console.log("welcome to my world");
+		}
+		f();
+		console.log("mission sucessfully");
+	</script>
+</head>
+<body>
+</body>
+</html>
