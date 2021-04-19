@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Grid
+    </title>
+    <style>
+        body{
+            display: grid;
+            grid-template-areas: 
+                                "header header header"
+                                "nav article aside"
+                                "footer footer footer";
+            grid-template-rows: 20% 60% 20%;
+            grid-template-columns:20% 1fr 20%;
+            height: 100vh;
+            text-align: center;
+        }
+        header,footer{
+            background-color: lightblue;
+        }
+        nav,aside{
+            background-color: rgb(200, 220, 300);
+        }
+        #pageHeader{
+            grid-area: header;
+        }
+        #pageFooter{
+            grid-area: footer;
+        }
+        #mainArticle{
+            grid-area: article;
+        }
+        #mainNav{
+            grid-area: nav;
+        }
+        #mainAside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <header id="pageHeader">Mastermind India</header>
+    <footer id="pageFooter"><a href="https://en.m.wikipedia.org/wiki/Mastermind_India">About Us</a><br>
+		<a href="https://mastermindsindia.com/contactsus.php">Contact Us</a>
+	</footer>
+    <article id="mainArticle">Mastermind India is an Indian Television quiz show based on the Bristish quiz show mastremind.
+		it originally aired on BBC World's "Made in India" series between 1998 and 2002 Each round saw four contestants taking the black chair one by one,and facing rapid fire questions on subjects of thier own choosing in the first half,and on general knowledge in the second half.
+		One of the hallmarks of the Indian show was the staging of the contest at heritage sites across the country.
+		For example.in 1999 the semi-finals were held at the Ferozshah kolta in delhi
+	   </article>
+    <nav id="mainNav"><a href="register.html">register</a><br>
+		<a href="topics.html">Topics For Quiz</a><br>
+</nav>
+    <aside id="mainAside">winner reward is One Million</aside>
+</body>
+</html>

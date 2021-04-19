@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+<html>
+ <head>
+	<title>flexbox</title>
+	<style>
+	 .main{
+		display:flex;
+		background-color:lightblue;
+		justify-content:space-between;
+		align-items:center;
+		padding:2em;
+		line-height:20px;
+		
+	 }
+	 .music{
+		liststyle:square;
+		margin:1px;
+		padding:2;
+		display:flex;
+		flex:3;
+	 }
+	 .music li{
+		margin-left:12px;
+		display:inline-block;
+		padding:0 10px;
+	 }
+	 .music li a{
+		padding:4em;
+		text-decoration:none;
+		text-transformation:capitalize;
+	 }
+	</style>
+ </head>
+ <body>
+	<div class="main">
+	  <div>
+		<ul class="music">
+			<li><a href="https://www.spotify.com/us/">Home</a></li>
+			<li><a href="https://www.spotify.com/us/signup/?forward_url=https%3A%2F%2Fwww.spotify.com%2Fus%2Fdownload%2F">Sign Up Free</a></li>
+			<li><a href="https://www.spotify.com/us/">AboutUs</a></li>
+		</ul>
+	 <form>
+		<input type="search" placeholders="Search">
+		<button type="button">Go</button>
+	 </form>
+	</div>
+ </body>	
+</html>
+	
