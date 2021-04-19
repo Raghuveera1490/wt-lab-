@@ -1,0 +1,154 @@
+<DOCTYPE! html>
+<head>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	  <title>get the premium</title>
+</head>
+<style>
+
+.form-container{
+    width: 50vw;
+    box-shadow: 0 0 10px 0 gray;
+    padding: 30px;
+    margin-bottom: 2em;
+    background-color: black;
+    color:darkgrey;
+}
+
+.premium{
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 1em;
+}
+
+.premium-head{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(145, 204, 241 );
+    margin-top: -20px;
+    padding: 0;
+}
+
+.form-container .reg-btn{
+    margin: 0 auto;
+    width: 18vw;
+}
+
+#call-to-login{
+    border-top: 2px solid grey;
+    margin: 20px 0 -1.5em;
+    font-size: 1.2rem;
+}
+
+#GEt-the-premium{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .form-container{
+        width: 90vw;
+    }
+    .form-row  .form-group{
+        padding: .3em 0 0 0;
+    }
+
+    .form-container.reg-btn{
+        margin: 0 auto;
+        width: 50vw;
+    }
+
+}
+</style>
+<body>
+    <div id="Get_the_Premium-form" class="row premium">
+        <form class="form-container">
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <p class="premium-head">Premium</p>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="text" name="fname" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="text" name="username" id="username"  placeholder="Userame" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="number" name="phonenum" id="phonenum" placeholder="Phone Number"   maxlength="10" required>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <input class="form-control" type="email" name="email-id" id="email-id" placeholder="Your e-m@il Address" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <select class="form-control" id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <input placeholder="Date Of Birth : DD/MM/YY" class="form-control" type="text" onfocus="(this.type='date')" id="date" required>      <!-- this snippet worked for placeholder instead of type="date" -->
+                </div>
+
+                <div class="form-group col-md-6">
+                    <select class="form-control" id="country">
+                        <option>India</option>
+                        <option>U.S.A</option>
+                        <option>belgium</option>
+                        <option>mexico</option>
+                        <option>poland</option>
+                        <option>norway</option>
+
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="text" name="user-id" id="user-id" placeholder="username" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <textarea class="form-control" name="home-addr" id="home-addr" cols="30" rows="7" placeholder="Home Addess"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea class="form-control" name="office-addr" id="office-addr" cols="30" rows="7" placeholder="Office Addess"></textarea>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="password" name="password" id="passowrd" placeholder="Password" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control" type="password" name="password" id="passowrd" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="form-group col-12">
+                    <input  type="checkbox" name="checkb-1" id="checkb-1" required>
+                    <label for="checkb-1">I agree with terms and conditions.</label>
+                </div>
+
+        
+
+                <div class="col-12">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary btn-md reg-btn">Get the premium</button>
+                    </div>
+                </div>
+
+                <hr id="line">
+
+                <div class="form-group col-12">
+                    <p id="call-to-login"><small>Already have an account ? <a href="bootstrapLogin.html">login</a></small></p>
+                </div>
+            </div>
+
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<DOCTYPE! html>
+<head>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	  <title>Bootstrap Login form</title>
+</head>
+<style>
+	.form-container{
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0  darkgrey;
+    padding: 25px;
+    width: 25vw;
+    text-decoration-color: blue;   
+   background-color:black;
+   color:darkgray; 
+}
+
+.login-head{
+    text-align: center;
+    font-size: 2.0rem;
+    color: rgb(145,204,241);
+}
+
+.logIn{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.forgot-login-link{
+    text-align: center;
+    margin-bottom: 1.7em;
+    font-size: 17px;
+}
+.call-to-get-the-premium{
+    text-align:center;
+    margin-bottom:0px;
+    color:rgb(145,204,241);
+    
+
+
+}
+@media screen and(max-width:750px){
+	.form-container{
+		width:60vw;
+	}
+</style>
+<body>   
+	<div id="sign-in-form" class="row logIn">        
+                <form class="form-container">
+                    <p class="login-head">Sign-Up</p>
+        
+                    <div class="form-group">
+                      <label for="username"><i class="fas fa-user"></i>Username</label>
+                      <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password"><i class="fas fa-lock"></i>Password</label>
+                      <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="login-link">
+                      <a href="#"><small>Forgot Password ?</small></a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <hr>
+                    <div class="call-to-get-the-premium">
+                        <p>Don't have an premium account? <a href="Bootstrappremium.html">Create one
+			</a></p>
+                    </div>
+                </form>
+        </div>
+</body>
+</html>
