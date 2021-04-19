@@ -1,0 +1,44 @@
+<DOCTYPE! html> 
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>calculator</title>
+        <script type="text/javascript">
+            var n1= parseInt(prompt("Enter the first number:",0));
+            var n2= parseInt(prompt("Enter the second number:",1));
+            var op=prompt("Enter the operator:");
+            if(op=='+'){
+                document.write("SUM="+(n1+n2));
+            }
+            else if(op=="-"){
+                document.write("SUBTRACTION="+(n1-n2));
+
+            }
+            else if(op=="*"){
+                document.write("Product="+(n1*n2));
+            }
+            else if(op=="/"){
+                if(n2!='0'){
+                    document.write("Division="+(n1/n2));
+                }
+		        else{
+		             document.write("invalid");
+                }
+            }
+	         else if(op=="%"){
+		        if(n2!='0'){
+		    	    document.write("Modulus="+(n1%n2));
+		        }
+                else{
+                    document.write("invalid");
+                }
+            }
+            else{
+                document.write("Invalid Operator");
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

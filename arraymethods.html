@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title><ArrayMethods></title>
+        <script type="text/javascript">
+            var k1=[4,6,8,9,1];
+            var k2=[12,34,38,5.3];    
+            document.write("k1 = "+k1+"<br>");
+            document.write("k2 = "+k2+"<br>");
+            p=k1.concat(k2);
+            document.write("concat(k1,k2)"+p+"<br>");
+            document.write("Index of 1 in k1 is"+k1.indexOf(1)+"<br>");
+            document.write("Last Index of 1 in k1 is"+k1.lastIndexOf(1)+"<br>");
+            k2.push(10);
+            document.write("After push method k2 is"+k2+"<br>");
+            k1.pop();
+            document.write("After pop method k1 is"+k1+"<br>");
+            document.write("join hands with:"+k2.join(":")+"<br>");
+            document.write("sorted array k1="+k1.sort()+"<br>");
+            document.write("reversing array k2="+k2.reverse()+"<br>");
+            document.write("shift the array"+k1.shift()+"<br>");
+            document.write("slice"+k2.slice(32,38)+"<br>");
+            document.write("splice array"+k1.splice(4,9)+"<br>");
+        </script>
+</head>
+<body>
+
+</body>
+</html>
